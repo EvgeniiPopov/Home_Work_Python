@@ -3,10 +3,12 @@
 #*Пример:*
 
 #- [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
+def number_odd_position(l):
+    sum = 0
+    for i in range(1, len(l), 2):
+       sum += l[i]
+    return sum
+list_nums = [2, 3, 5, 9, 3]
+print("Cумма чисел стоящих на нечетных поцициях равна: ", number_odd_position(list_nums))
 
-list = [2, 3, 5, 9, 3]
-sum = 0
-for i in range(1, len(list), 2):
-    sum += list[i]
-print("Cумма чисел стоящих на нечетных поцициях равна: ", sum)
 
